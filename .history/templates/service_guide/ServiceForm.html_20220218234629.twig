@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<br><br><br><br>
+<div class="class="nk-form"">
+
+            <div class="row align-items-center">
+            <div class="row justify-content-md-center">
+                        <div class="col-lg-12">
+                         {{ form_row(formService.titre) }}
+                            <label for="fname">Title <span class="text-main-1">*</span>:</label>
+                            <input type="text" class="form-control required" name="titre" id="titre">
+                        </div>
+                    
+                    </div>
+            </div>
+<h2>Service Guide</h2>
+{{ form(formService) }}
+</fieldset>
+</div>
+<br><br><br><br>
+{% endblock %}

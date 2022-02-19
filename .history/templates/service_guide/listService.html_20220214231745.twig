@@ -1,0 +1,21 @@
+
+<table>
+    <tr>
+        <th> Nb Heure </th>
+
+        <th> Prix </th>
+
+    </tr>
+    {% for c in listService %}
+        <tr>
+            <td> {{ c.NbHeure }} 
+            <a href="{{ path('SupprimerService',{'id':c.id}) }}">Supprimer</a>
+            <a href="{{ path('ModifierService',{'id':c.id}) }}">Update</a>
+             </td>
+            <td> {{ c.Prix }} </td>
+
+
+
+    {% endfor%}
+
+</table>

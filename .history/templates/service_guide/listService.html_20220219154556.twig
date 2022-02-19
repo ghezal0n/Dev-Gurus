@@ -1,0 +1,42 @@
+
+<table>
+    <tr>
+        <th> Nb Heure </th>
+
+        <th> Prix   </th>
+      
+
+    </tr>
+    {% for c in listService %}
+        <tr>
+         <td> {{ c.titre }} </td>
+            <td> {{ c.descrp }} </td>
+            
+                        <td> {{ c.DateCreation|date('d-m-Y')}} </td>
+                
+            <td> {{ c.NbHeure }} 
+            <a href="{{ path('SupprimerService',{'id':c.id}) }}">Supprimer</a>
+            <a href="{{ path('ModifierService',{'id':c.id}) }}">Update</a>
+             </td>
+            <td> {{ c.Prix }} </td>
+
+
+
+    {% endfor%}
+
+</table>
+ <div class="row vertical-gap">
+   <div class="col-lg-4">
+                <div class="nk-feature-2">
+                    <div class="nk-feature-icon">
+                      <!--  <span class="ion-social-twitter"></span>-->
+                    </div>
+                    <div class="nk-feature-cont text-center">
+                    {% for c in listService %}
+                        <h3 class="nk-feature-title"><span class="text-main-1"></span> Friendly</h3>
+                        <div class="nk-gap-1"></div>
+                        d this she looked down at her hands and was surprised to see that she had put on one of the Rabbit's little white.
+                    </div>
+                </div>
+            </div>
+  </div>
