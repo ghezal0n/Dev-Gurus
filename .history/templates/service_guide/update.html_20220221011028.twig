@@ -31,12 +31,12 @@
                              <div class="row vertical-gap">
                                          <div class="col-sm-6">
                                              <label for="email">Nombre heure <span class="text-main-1">*</span>:</label>
-                                                 <input type="number" class="form-control valid" value="1" min="1" max="100" aria-invalid="false" {{ form_widget(form.NbHeure) }}
+                                                 <input type="number" class="form-control valid" value="1" min="1" max="100" aria-invalid="false" {{ form(formService.NbHeure) }}
                                 <div class="nk-gap-2"></div>
                                               </div>
                                       <div class="col-sm-6">
                                              <label for="phone">Price <span class="text-main-1">*</span>:</label>
-                                            <input type="number" class="form-control required"{{ form_widget(form.prix) }}
+                                            <input type="number" class="form-control required"{{ form_widget(formService.prix) }}
                                     </div>
                                          <div class="nk-gap-2"></div>
 
@@ -50,7 +50,7 @@
                                               
                                           
     </div>    
-                                    <div class="nk-btn nk-btn-rounded nk-btn-color-main-1" >      {{ form_widget(form.Save) }} </div>
+                                    <div class="nk-btn nk-btn-rounded nk-btn-color-main-1" >      {{ form_widget(formService.Save) }} </div>
 
                     </div>
 </div>

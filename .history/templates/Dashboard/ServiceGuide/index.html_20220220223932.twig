@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+ <div class="templatemo-content-container">
+          <div class="templatemo-content-widget no-padding">
+            <div class="panel panel-default table-responsive">
+
+              <table class="table table-striped table-bordered templatemo-user-table">
+                <tbody>
+                  <thead>
+                  <tr>
+                    <td><a  class="white-text templatemo-sort-by">Id Service Guide <span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Titre Guide <span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Descrp Guide <span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Nombre d'heure Guide <span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Descrp Guide <span class="caret"></span></a></td>
+
+                    <td>Edit</td>
+                    <td>Ajouter</td>
+                    <td>Delete</td>
+                  </tr>
+                </thead>
+              {% for c in commande %}
+                  <tr>
+
+                    <td>{{c.id}}</td>
+                    <td>{{c.dateCmd|date('d-m-Y')}}</td>
+
+                    <td><a href="{{ path('ModifC',{'id':c.id}) }}">Modifier</a></td>
+                   <td><a href="{{ path('AjoutC') }}">Ajouter</a></td>
+                    <td><a href="{{ path("SuppC",{"id":c.id}) }}">supprimer</a></td>
+
+                  </tr>
+                     {% endfor %}
+                </tbody> 
+              </table>
+
+
+            </div>
+          </div>
+       <p>Copyright &copy; 2022 Clutch.gg 
+            |Ben Hadj Amor Rawaà
+            Ben Mbarek Khouloud
+            Ghezal Mouhamed Mehdi 
+            </p>
+        </div>
+{% endblock content %}
