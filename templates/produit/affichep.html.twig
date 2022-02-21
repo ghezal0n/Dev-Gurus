@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+        <title>Titre</title>
+    </head>
+
+    <body>
+    <table> 
+    <tr>
+    <th> ID produit </th>
+    <th> nom produit </th>
+    <th> quantité </th>
+    <th> prix </th>
+    <th> description </th>
+    </tr>
+    {% for p in produit %}
+    <tr>
+    <td>{{p.idProd}}</td>
+    <td>{{p.nomProd}}</td>
+    <td>{{p.quantite}}</td>
+    <td>{{p.prix}}</td>
+    <td>{{p.description}}</td>
+    <td> <a href="/produit/supprimerp/{{ p.idProd }}" class="btn btn-danger" 
+    onclick="return confirm('Etes vous sûr de supprimer ce produit ?');">Supprimer</a> </td>
+    </tr>
+    {% endfor %}
+    </table>
+    </body>
+</html> 

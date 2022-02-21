@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+        <title>Titre</title>
+    </head>
+
+    <body>
+    <table> 
+    <tr>
+    <th> ID </th>
+    <th> nom fournisseur </th>
+    <th> email </th>
+    <th> num tel </th>
+    </tr>
+    {% for f in fournisseur %}
+    <tr>
+    <td>{{f.id}} </td>
+    <td>{{f.nomFourni}}</td>
+    <td>{{f.email}}</td>
+    <td>{{f.numTelf}}</td>
+    <td> <a href="/fournisseur/supprimerf/{{ f.id }}" class="btn btn-danger" 
+    onclick="return confirm('Etes vous sûr de supprimer ce fournisseur?');">Supprimer</a> </td>
+    </tr>
+    {% endfor %}
+    </table>
+    </body>
+</html> 
