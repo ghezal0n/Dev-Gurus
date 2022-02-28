@@ -10,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Role
 {
+    /*bassem*/
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
