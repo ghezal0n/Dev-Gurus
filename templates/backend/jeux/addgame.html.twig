@@ -1,0 +1,139 @@
+{% extends 'backend/dashboard_c/dashboard.html.twig' %}
+
+
+{% block title %}Add-games{% endblock %}
+
+
+
+{% block content %}
+
+<body>  
+    <!-- Left column -->
+    <div class="templatemo-flex-row">
+      <div class="templatemo-sidebar">
+        <header class="templatemo-site-header">
+          <div class="square"></div>
+          <h1>Visual Admin</h1>
+        <div class="profile-photo-container">
+          <img src="{{asset('images/profile-photo.jpg')}}" alt="Profile Photo" class="img-responsive">  
+          <div class="profile-photo-overlay"></div>
+        </div>      
+        <!-- Search box -->
+        <form class="templatemo-search-form" role="search">
+          <div class="input-group">
+              <button type="submit" class="fa fa-search"></button>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
+          </div>
+        </form>
+        <div class="mobile-menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav class="templatemo-left-nav">          
+          <ul>
+            <li><a href="{{ path('dashboard_c') }}"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li>
+            <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Data Visualization</a></li>
+            <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li>
+            <li><a href="{{ path('user_c') }}"><i class="fa fa-users fa-fw"></i>Users</a></li>
+            <li><a href="{{ path('jeux') }}" class="active"><i class="fa fa-eject fa-fw"></i>jeux</a></li>
+            <li><a href="{{ path('login_c') }}"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+          </ul>  
+        </nav>
+      </div>
+      <!-- Main content -->
+      <div class="templatemo-content col-1 light-gray-bg">
+        <div class="templatemo-top-nav-container">
+          <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+              <ul class="text-uppercase">
+                <li><a href="">Admin panel</a></li>
+                <li><a href="{{ path('dashboard_c') }}" class="active">Dashboard</a></li>
+                <li><a href="">Overview</a></li>
+                <li><a href="{{ path('login_c') }}">Sign in form</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="templatemo-content-container">
+          <div class="templatemo-content-widget white-bg">
+            <h2 class="margin-bottom-10">Preferences</h2>
+            <p>Here goes another form and form controls.</p>
+            <form action="index.html" class="templatemo-login-form" method="post" enctype="multipart/form-data">
+              <div class="row form-group">
+                <div class="col-lg-6 col-md-6 form-group">                  
+                    <label for="inputFirstName">Nom du Jeu</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="nom du jeu">                  
+                </div>
+                <div class="col-lg-6 col-md-6 form-group">                  
+                    <label for="inputLastName">Entreprise</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Developper Par">                  
+                </div> 
+              </div>
+              <div class="row form-group">
+                <div class="col-lg-6 col-md-6 form-group">                  
+                    <label for="inputUsername">Date de creation</label>
+                    <input type="date" class="form-control" id="inputUsername" placeholder="DDD">                  
+                </div>
+                <div class="col-lg-6 col-md-6 form-group">                  
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="admin@company.com">                  
+                </div> 
+              </div>
+              <div class="row form-group">
+                <div class="col-lg-12 form-group">                   
+                    <label class="control-label" for="inputNote">Description du jeu</label>
+                    <textarea class="form-control" id="inputNote" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-lg-6 col-md-6 form-group">
+                  <div>
+                    <label class="control-label templatemo-block">Categorie</label> 
+                    <div class="templatemo-block margin-bottom-5">
+                      <input type="radio" name="emailOptions" id="r1" value="html" checked>
+                      <label for="r1" class="font-weight-400"><span></span>MMORPG</label>
+                    </div>
+                    <div class="templatemo-block margin-bottom-5">
+                      <input type="radio" name="emailOptions" id="r2" value="plain">
+                      <label for="r2" class="font-weight-400"><span></span>MOBA</label>
+                    </div>
+                    <div class="templatemo-block margin-bottom-5">
+                      <input type="radio" name="emailOptions" id="r3" value="rich">
+                      <label for="r3" class="font-weight-400"><span></span>FPS</label>
+                    </div> 
+                    <div class="templatemo-block margin-bottom-5">
+                      <input type="radio" name="emailOptions" id="r4" value="rich" center>
+                      <label for="r4" class="font-weight-400"><span></span>Rancing</label>
+                    </div> 
+                    <div class="templatemo-block margin-bottom-5">
+                      <input type="radio" name="emailOptions" id="r5" value="rich">
+                      <label for="r5" class="font-weight-400"><span></span>Other</label>
+                    </div>                    
+                  </div>                  
+                </div> 
+              </div>
+              <div class="row form-group">
+                <div class="col-lg-12">
+                  <label class="control-label templatemo-block">File Input</label> 
+                  <!-- <input type="file" name="fileToUpload" id="fileToUpload" class="margin-bottom-10"> -->
+                  <input type="file" name="fileToUpload" id="fileToUpload" class="filestyle" data-buttonName="btn-primary" data-buttonBefore="true" data-icon="false">
+                  <p>Maximum upload size is 5 MB.</p>                  
+                </div>
+              </div>
+              <div class="form-group text-right">
+                <button type="submit" class="templatemo-blue-button">ajouter</button>
+              </div>                           
+            </form>
+          </div>
+          <footer class="text-right">
+            <p>Copyright &copy; 2084 Company Name 
+            | Design: Template Mo</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+
+{% endblock content %}
+
+  

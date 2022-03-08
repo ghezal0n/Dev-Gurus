@@ -1,0 +1,38 @@
+{% extends 'baseBack.html.twig' %}
+
+{% block title %}Tournois{% endblock %}
+
+{% block body %}
+    <h1>Tournois</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>IdTournois</th>
+                <td>{{ tournoi.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_tournois</th>
+                <td>{{ tournoi.nomTournois }}</td>
+            </tr>
+            <tr>
+                <th>Nb_eq</th>
+                <td>{{ tournoi.nbEq }}</td>
+            </tr>
+            <tr>
+                <th>DateDebut</th>
+                <td>{{ tournoi.dateDeb ? tournoi.dateDeb|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DateFin</th>
+                <td>{{ tournoi.dateFin ? tournoi.dateFin|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('tournois_index') }}"><button class="btn btn-default">back to list</button></a>
+
+    <a href="{{ path('tournois_edit', {'id': tournoi.id}) }}"><button class="btn btn-default">edit</button></a>
+
+    {{ include('tournois/back/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base2.html.twig' %}
+{% block content %}
+ {% form_theme form 'bootstrap_4_layout.html.twig' %}
+        <div class="templatemo-content-container">
+          <div class="templatemo-content-widget white-bg">
+
+            <h2 class="margin-bottom-10">Ajouter un produit</h2>
+            {{ form_start(form)}}
+              <div class="form-group text-right">
+                <button type="submit" class="templatemo-blue-button">Ajouter</button>
+                <button type="reset" href="/afficher_prod" class="templatemo-white-button" >Annuler</button>
+                
+              </div> 
+            {{ form_end(form) }}
+            
+          </div>
+          </div>
+          
+{% endblock content %}

@@ -1,0 +1,31 @@
+<meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Titre</title>
+    </head>
+
+    <body>
+    <table> 
+    <tr>
+    <th> id </th>
+    <th> lieu </th>
+    <th> prix </th>
+    <th> date </th>
+    </tr>
+    {% for l in livraison %}
+    <tr>
+    <td>{{l.id}} </td>
+    <td>{{l.lieu}}</td>
+    <td>{{l.prix}} </td>
+    <td>{{l.date|date('d-m-Y')}}</td>
+   <td><a href="{{ path("SuppL",{"id":l.id}) }}">supprimer</a></td>
+    <td> <a href="{{ path('ModifL',{'id':l.id}) }}">Modifier</a></td>
+    
+    </tr>
+    {% endfor %}
+    
+    </table>
+    <a href="{{ path('AjoutL') }}">Ajouter</a>
+    </body>
+</html> 

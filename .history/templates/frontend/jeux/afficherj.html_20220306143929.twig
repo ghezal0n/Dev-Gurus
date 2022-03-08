@@ -1,0 +1,33 @@
+  {% extends 'base.html.twig' %}
+
+{% block content %}
+  <!-- START: Posts Grid -->
+                    <div class="nk-blog-grid">
+                        <div class="row">
+
+                            <div  class="col-md-6">
+                            {% for j in jeux %}
+                                <!-- START: Post -->
+                                <div class="nk-blog-post">
+                                    <a href="blog-article.html" class="nk-post-img">
+                                        <img src="{{asset('assets/images/valo.jpg')}}" alt="Smell magic in the air. Or maybe barbecue">
+                                    </a>
+                                    <div class="nk-gap"></div>
+                                    <h2 class="nk-post-title h4"><a href="blog-article.html">{{j.getNomJeux}}</a></h2>
+                                    <div class="nk-post-by">
+                                        <img src="assets/images/avatar-1.jpg" alt="Hitman" class="rounded-circle" width="35"> by <a href="#">Hitman</a>
+                                    </div>
+                                    <div class="nk-gap"></div>
+                                    <a href="blog-article.html" class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1">Read More</a>
+                                </div>
+                                <!-- END: Post -->
+                             {% endfor %}
+                        </div>
+
+                       
+                    </div>
+                    <!-- END: Posts Grid -->
+
+                </div>
+
+ {% endblock content %}

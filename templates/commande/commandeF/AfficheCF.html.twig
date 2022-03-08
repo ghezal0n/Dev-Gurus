@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+
+ {% for c in commande %}
+ <div class ="container">
+ <div class="nk-gap"></div>
+<div class="nk-info-box text-success">
+            <div class="nk-info-box-icon">
+                <i class="ion-checkmark-round"></i>
+            </div>
+             <div class="nk-info-box-close nk-info-box-close-btn">
+                        <i href="{{ path("SuppC",{"id":c.id}) }}" class="ion-close-round"></i>
+                    </div>
+            <h3>Commande </h3>
+            
+            <a  class="white-text templatemo-sort-by"> Date Commande : {{c.dateCmd|date('d-m-Y')}} </a>
+            
+         <a href="{{ path("SuppC",{"id":c.id}) }}"class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1">Supprimer  </a>
+<div class="nk-gap"></div>
+<a href="" class="white-text templatemo-sort-by">Image : <span class="caret"></span></a>
+        </div>
+</div>
+ {% endfor %}
+        {% endblock content %}

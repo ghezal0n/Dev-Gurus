@@ -1,0 +1,57 @@
+{% extends 'base2.html.twig' %}
+{% block content %}
+
+<div class="panel-heading templatemo-position-relative">
+<h2class="text-uppercase">Service Guide Table</h2>
+ <div class="templatemo-content-container">
+          <div class="templatemo-content-widget no-padding">
+          <div class="panel-heading templatemo-position-relative">
+            <h2 class="text-uppercase">Service Guide Table</h2>
+            </div>
+            <div class="panel panel-default table-responsive">
+
+              <table class="table table-striped table-bordered templatemo-user-table">
+                <tbody>
+                  <thead>
+                  <tr>
+                    <td><a  class="white-text templatemo-sort-by">Id <span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Titre<span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Description <span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Nombre d'heure  <span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Prix<span class="caret"></span></a></td>
+                    <td><a  class="white-text templatemo-sort-by">Date Creation <span class="caret"></span></a></td>
+
+
+                    <td>Edit</td>
+                    <td>Ajouter</td>
+                    <td>Supprimer</td>
+                  </tr>
+                </thead>
+              {% for c in listService %}
+                  <tr>
+
+                    <td>{{c.id}}</td>
+                    <td>{{ c.titre }}</td>
+                    <td>{{ c.descrp }}</td>
+                    <td>{{ c.NbHeure }}</td>
+                    <td>{{ c.prix }}</td>
+                    <td>{{ c.DateCreation|date("m/d/Y")  }}</td>
+
+
+                    <td><a href="{{ path('ModifierServiceAdmin',{'id':c.id}) }}">Modifier</a></td>
+                   <td><a href="{{ path('AjouterSGAdmin') }}">Ajouter</a></td>
+                    <td><a href="{{ path("SupprimerServiceAdmin",{"id":c.id}) }}">supprimer</a></td>
+
+                  </tr>
+                     {% endfor %}
+                </tbody> 
+              </table>
+
+
+          </div>
+       <p>Copyright &copy; 2022 Clutch.gg 
+            |Ben Hadj Amor Rawaà
+           
+            </p>
+        </div>
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% extends 'base2.html.twig' %}
+{% block content %}
+
+  <div class="templatemo-content-container">
+          <div class="templatemo-content-widget no-padding">
+           <h2 class="margin-bottom-10">Les produits : </h2>
+             <div class="panel panel-default table-responsive">
+              <table class="table table-striped table-bordered templatemo-user-table">
+                <thead>
+          <form method="post" action="{{path('SearchNSC') }}">
+          <label>Recherche</label>
+          <input type="text" name="SearchNSC"> <input type="submit" value="SearchNSC">
+          </form>
+                  <tr>
+                    <td><a href="" class="white-text templatemo-sort-by">#ID <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Nom produit <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Image <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Quantité <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Prix <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Description <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Categorie <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Nom fournisseur <span class="caret"></span></a></td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                  </tr>
+                </thead>
+                
+                 {%for p in produit%}
+                  <tr>
+                    <td>{{p.id}}</td>
+                    <td>{{p.nom}}</td>
+                    <td><img style="height: 100px" src="{{ asset('uploads/images/') ~ p.img }}"/>  </td>
+                    <td>{{p.qte}}</td>
+                    <td>{{p.prix}}</td>
+                    <td>{{p.descrp}}</td>
+                    <td>{{p.catego}}</td>
+                    <td>{{p.fournisseur.nom}}</td>
+                    <td><a href="/modifier_prod/{{p.id}}" class="templatemo-edit-btn">Edit</a></td>
+                    <td><a href="/produit/supprimerp/{{ p.id }}" class="btn btn-danger" 
+                        onclick="return confirm('Etes vous sûr de supprimer ce produit ?');">Delete</a> </td>
+                        
+                  </tr>
+                {% endfor %}            
+              </table>    
+            </div>                        
+          </div>          
+     
+              
+          <footer class="text-right">
+            <p>Copyright &copy; 2084 Company Name 
+            | Design: Template Mo</p>
+          </footer>         
+        </div>
+{% endblock content %}

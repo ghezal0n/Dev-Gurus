@@ -1,0 +1,66 @@
+{% extends 'baseBack.html.twig' %}
+
+
+
+{% block body %}
+    <h1>Matchs index</h1>
+ <div>
+        <input style="margin-bottom: 10px" class="form-control" id="myInput" type="text" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Trounement Name</th>
+                <th>Home Team</th>
+                <th>Away Team</th>
+                <th>Date Match </th>
+
+
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody id="hi">
+        {% for match in matchs %}
+            <tr>
+                <td>{{ match.id }}</td>
+                <td>{{ match.idTournois }}</td>
+                <td>{{ match.EquipeHome }}</td>
+                <td>{{ match.EquipeAway }}</td>
+                
+                <td>{{ match.DateMatch ? match.DateMatch|date('Y-m-d') : '' }}</td>
+
+
+                <td>
+                  <a href="{{ path('matchs_show', {'id': match.id}) }}"><button class="btn btn-default">show</button></a>
+                    <a href="{{ path('matchs_edit', {'id': match.id}) }}"><button class="btn btn-default">edit</button></a>
+                  
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <div>
+     {{ knp_pagination_render(matchs) }}</div>
+    <a href="{{ path('matchs_new') }}"><button class="btn btn-default">Create new</button></a>
+    <a href="{{ path('statsM') }}"><button class="btn btn-default">Stats</button></a>
+
+
+    
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#hi tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+{% endblock %}

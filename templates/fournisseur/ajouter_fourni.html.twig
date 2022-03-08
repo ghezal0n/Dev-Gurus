@@ -1,0 +1,26 @@
+{% extends 'base2.html.twig' %}
+{% block content %}
+
+        <div class="templatemo-content-container">
+          <div class="templatemo-content-widget white-bg">
+                             
+            <h2 class="margin-bottom-10">Ajouter un fournisseur</h2>
+             {{ form_start(form) }}
+              {{form_widget(form)}}
+            <p>  </p>
+              
+
+              <div class="form-group text-right">
+                <button type="submit" class="templatemo-blue-button">Ajouter</button>
+                <button type="reset" class="templatemo-white-button">Annuler</button>
+              </div>                           
+            {{ form_end(form) }}
+          </div>
+
+          <footer class="text-right">
+            <p>Copyright &copy; 2084 Company Name 
+            | Design: Template Mo</p>
+          </footer>
+        </div>
+      </div>
+{% endblock content %}

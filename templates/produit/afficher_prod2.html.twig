@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+
+<div class="nk-gap-3"></div>
+ <div class="container">
+    <div class="row vertical-gap">
+    {%for p in produit%}
+<div class="col-lg-4">
+    <div class="nk-product-cat-2">
+         <div class="nk-feature-2">   
+                
+                <a class="nk-product-image" >
+                <img src="{{asset('assets/images/avatar-3.jpg') }}" width="29">
+
+            <div class="nk-gap-1"></div>
+            <h4 class="text-main-4"><a>{{ p.nom }} </a></h4>
+                </a>
+                   
+                <div class="nk-product-cont">
+                 
+                      <div class="col-md-8">
+                            <div class="mt-7"></div>
+                            <div class="nk-rating">
+                                
+                                <input type="radio" id="review-rate-5" name="review-rate" value="5">
+                                <label for="review-rate-5">
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </label>
+
+                                <input type="radio" id="review-rate-4" name="review-rate" value="4">
+                                <label for="review-rate-4">
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </label>
+
+                                <input type="radio" id="review-rate-3" name="review-rate" value="3">
+                                <label for="review-rate-3">
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </label>
+
+                                <input type="radio" id="review-rate-2" name="review-rate" value="2">
+                                <label for="review-rate-2">
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </label>
+
+                                <input type="radio" id="review-rate-1" name="review-rate" value="1">
+                                <label for="review-rate-1">
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </label>
+                            </div>
+                        </div>
+
+                    <div class="nk-gap-1"></div>
+                                  Categorie : {{ p.catego }} 
+                        <div class="nk-gap-2"></div>
+
+                    <div class="nk-product-price">Prix : {{ p.prix }} Dt</div>
+                    <div class="nk-gap-1"></div>
+
+                     <a href="{{ path('affichep3',{'id':p.id}) }}" class="nk-btn nk-btn-rounded nk-btn-color-main-1 nk-btn-hover-color-white">details du produit</a>
+                     <div class="nk-gap-2"></div>
+                     <a href="#" class="nk-btn nk-btn-rounded nk-btn-color-main-1 nk-btn-hover-color-white">Passer une commande :))</a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+                {% endfor %}            
+{% endblock content %}

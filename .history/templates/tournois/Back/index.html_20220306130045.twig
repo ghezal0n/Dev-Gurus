@@ -1,0 +1,59 @@
+{% extends 'base2.html.twig' %}
+
+{% block title %}Tournois index{% endblock %}
+
+{% block body %}
+    <h1>Tournois index</h1>
+<div>
+        <input style="margin-bottom: 10px" class="form-control" id="myInput" type="text" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IdTournois</th>
+                <th>Nom_tournois</th>
+                <th>Nb_eq</th>
+                <th>DateDebut</th>
+                <th>DateFin</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody id="hi">
+        {% for tournoi in tournois %}
+            <tr >
+                <td>{{ tournoi.id }}</td>
+                <td>{{ tournoi.nomTournois }}</td>
+                <td>{{ tournoi.nbEq }}</td>
+                <td>{{ tournoi.dateDeb ? tournoi.dateDeb|date('Y-m-d') : '' }}</td>
+                <td>{{ tournoi.dateFin ? tournoi.dateFin|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('tournois_show', {'id': tournoi.id}) }}"><button class="btn btn-default">show</button></a>
+                    <a href="{{ path('tournois_edit', {'id': tournoi.id}) }}"><button class="btn btn-default">edit</button></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('tournois_new') }}"><button class="btn btn-default">Create new</button></a>
+    <a href="{{ path('statsT') }}"><button class="btn btn-default">Stats</button></a>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#hi tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+    
+{% endblock %}

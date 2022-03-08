@@ -1,0 +1,182 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="nk-gap-3"></div>
+    <div class="container">
+        <!-- START: Blockquote -->
+        <div class="nk-gap-2"></div>
+        <h3 class="text-main-1">Coching Offre Service </h3>
+        <div class="nk-gap"></div>
+        <blockquote class="nk-blockquote">
+            <div class="nk-blockquote-icon"><span>"</span></div>
+            <div class="nk-blockquote-content">
+                Are You a good Player ?
+                Did you reached the highest level ?
+                Do you Wanna make mony from Sharing your skills with others ?
+                You can Join our Coaching Team and become a great Coach ?
+                Press to Send you Cv .
+
+            </div>
+            <a href="listService/coachingReq" class="nk-btn nk-btn-rounded nk-btn-color-white" style=""> Press to Send you Cv</a>
+            <div class="nk-blockquote-author"><span>Clutch.gg Dev Team </span></div>
+        </blockquote>
+        <!-- END: Blockquote -->
+    </div>
+    <div class="nk-gap-3"></div>
+
+    <div class="container">
+
+
+        <div class="row vertical-gap">
+            {% for c in listService %}
+                <div class="col-lg-4">
+                    <div class="nk-product-cat-2">
+                        <div class="nk-feature-2">
+                            <div class="row justify-content-start">
+                                <div class="col-4">
+                                    <a class="nk-product-image" >
+                                        <img src="{{asset('assets/images/avatar-3.jpg') }}" width="29"> </a>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="text-main-1"><a>{{ c.titre }} </a></h4>
+                                    <div class="col-md-10">
+                                        <div class="mt-7"></div>
+                                        <div class="nk-rating">
+                                            <input type="radio" id="review-rate-5" name="review-rate" value="5">
+                                            <label for="review-rate-5">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+
+                                            <input type="radio" id="review-rate-4" name="review-rate" value="4">
+                                            <label for="review-rate-4">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+
+                                            <input type="radio" id="review-rate-3" name="review-rate" value="3">
+                                            <label for="review-rate-3">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+
+                                            <input type="radio" id="review-rate-2" name="review-rate" value="2">
+                                            <label for="review-rate-2">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+
+                                            <input type="radio" id="review-rate-1" name="review-rate" value="1">
+                                            <label for="review-rate-1">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="nk-gap-1"></div>
+                                <div>Date Creation : {{"now"|date("d/m/Y")}}</div>
+                                <div class="nk-product-cont">
+
+
+                                    <div class="nk-gap-1"></div>
+                                    Ce service va t'aider avec {{ c.descrp }}
+                                    <div class="nk-gap-2"></div>
+                                    <div class="nk-product-price">Dureé : {{ c.NbHeure }} Heure </div>
+                                    <div class="nk-gap-2"></div>
+
+                                    <div class="nk-product-price">Prix : {{ c.Prix }} Dt</div>
+                                </div>
+                                <div class="nk-gap-1"></div>
+                                <div class="col-md-4 offset-md-2"><a href="{{ path('AjoutReservation',{'id':c.id}) }}" class="nk-btn nk-btn-rounded nk-btn-color-main-1 nk-btn-hover-color-white">Reserver Guide </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor%}
+
+            {% for c in listService2 %}
+                <div class="col-lg-4">
+                    <div class="nk-product-cat-2">
+                        <div class="nk-feature-2">
+                            <div class="row justify-content-start">
+                                <div class="col-4">
+                                    <a class="nk-product-image" >
+                                        <img src="{{asset('assets/images/avatar-3.jpg') }}" width="29"> </a>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="text-main-1"><a>{{ c.titre }} </a></h4>
+                                    <div class="col-md-10">
+                                        <div class="mt-7"></div>
+                                        <div class="nk-rating">
+                                            <input type="radio" id="review-rate-5" name="review-rate" value="5">
+                                            <label for="review-rate-5">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+
+                                            <input type="radio" id="review-rate-4" name="review-rate" value="4">
+                                            <label for="review-rate-4">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+
+                                            <input type="radio" id="review-rate-3" name="review-rate" value="3">
+                                            <label for="review-rate-3">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+
+                                            <input type="radio" id="review-rate-2" name="review-rate" value="2">
+                                            <label for="review-rate-2">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+
+                                            <input type="radio" id="review-rate-1" name="review-rate" value="1">
+                                            <label for="review-rate-1">
+                                                <span><i class="far fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="nk-gap-1"></div>
+                                <div>Date Creation : {{"now"|date("m/d/Y")}}</div>
+                                <div class="nk-product-cont">
+
+
+                                    <div class="nk-gap-1"></div>
+                                    Ce service va t'aider avec {{ c.descrp }}
+                                    <div class="nk-gap-2"></div>
+                                    <div class="nk-product-price">Dureé : {{ c.NbHeure }} Heure </div>
+                                    <div class="nk-gap-2"></div>
+
+                                    <div class="nk-product-price">Prix : {{ c.Prix }} Dt</div>
+                                </div>
+                                <div class="nk-gap-1"></div>
+                                <div class="col-md-4 offset-md-2"><a href="{{ path('AjoutReservation',{'id':c.id}) }}" class="nk-btn nk-btn-rounded nk-btn-color-main-1 nk-btn-hover-color-white">Reserver Guide </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+
+
+        </div>
+        <div class="nk-gap-2"></div>
+    </div>
+
+
+{% endblock %}
+
+

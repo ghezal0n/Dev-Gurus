@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+
+ <div class="nk-main">
+        
+            <!-- START: Breadcrumbs -->
+<div class="nk-gap-1"></div>
+<div class="container">
+    <ul class="nk-breadcrumbs">
+        
+        <li><span>Détails produit</span></li>
+        
+    </ul>
+</div>
+<div class="nk-gap-1"></div>
+<!-- END: Breadcrumbs -->
+
+        
+
+        
+<div class="container">
+    <div class="row vertical-gap">
+        <div class="col-lg-8">
+            <div class="nk-store-product">
+                <div class="row vertical-gap">
+                    <div class="col-md-6">
+                        <!-- START: Product Photos -->
+                        <div class="nk-popup-gallery">
+                            <div class="nk-gallery-item-box">
+                                <a href="assets/images/product-6.jpg" class="nk-gallery-item" data-size="1200x554">
+                                    <div class="nk-gallery-item-overlay"><span class="ion-eye"></span></div>
+                                    <img src="{{asset('assets/images/clutch.png')}}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="nk-gap-1"></div>
+                            <div class="row vertical-gap sm-gap">
+                                <div class="col-6 col-md-4">
+                                    <div class="nk-gallery-item-box">
+                                        <a href="assets/images/product-7.jpg" class="nk-gallery-item" data-size="622x942">
+                                            <div class="nk-gallery-item-overlay"><span class="ion-eye"></span></div>
+                                            <img src="assets/images/product-7-square.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="nk-gallery-item-box">
+                                        <a href="assets/images/product-8.jpg" class="nk-gallery-item" data-size="1920x907">
+                                            <div class="nk-gallery-item-overlay"><span class="ion-eye"></span></div>
+                                            <img src="assets/images/product-8-square.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="nk-gallery-item-box">
+                                        <a href="assets/images/product-9.jpg" class="nk-gallery-item" data-size="1500x750">
+                                            <div class="nk-gallery-item-overlay"><span class="ion-eye"></span></div>
+                                            <img src="assets/images/product-9-square.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: Product Photos -->
+                    </div>
+                    <div class="col-md-6">
+
+                        <h2 class="nk-product-title h3">{{produit.nom}} </h2>
+
+                        <div class="nk-product-description"> {{produit.descrp}} </div>
+
+                        <!-- START: Meta -->
+                        <div class="nk-product-meta">
+                            <div><strong>Categorie</strong>: <a href="#">{{ produit.catego }}</a></div>
+                            <div><strong>SKU</strong>: 300-200-503</div>
+                        </div>
+                        <!-- END: Meta -->
+
+                        <!-- START: Add to Cart -->
+                        <div class="nk-gap-2"></div>
+                        <form action="#" class="nk-product-addtocart">
+                            <div class="nk-product-price">{{ produit.prix }} DT </div>
+                            <div class="nk-gap-1"></div>
+                            <div class="input-group">
+                                <input type="number" class="form-control" value="1" min="1" max="21">
+                                <button class="nk-btn nk-btn-rounded nk-btn-color-main-1">Passer commande</button>
+                            </div>
+                        </form>
+                        <div class="nk-gap-3"></div>
+                        <!-- END: Add to Cart -->
+
+                        
+                    </div>
+                </div>
+
+                <!-- START: Share -->
+                <div class="nk-gap-2"></div>
+                
+                <!-- END: Share -->
+
+                <div class="nk-gap-2"></div>
+                <!-- START: Tabs -->
+                <div class="nk-tabs"></div>
+                <!-- END: Tabs -->
+            </div>
+
+            <!-- START: Related Products -->
+            
+            <!-- END: Related Products -->
+        </div>
+
+
+            <!-- END: Sidebar -->
+        </div>
+    </div>
+</div>
+
+{% endblock %}

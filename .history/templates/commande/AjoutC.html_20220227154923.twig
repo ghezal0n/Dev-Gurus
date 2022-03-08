@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+<div class="templatemo-content-container">
+          <div class="templatemo-content-widget white-bg">
+            <h2 class="margin-bottom-10">Ajouter commande </h2>
+            <p>  </p> 
+            {{form_start(form,{'attr' :{'novalidate':'novalidate'}})}}
+            <div class="templatemo-login-form" method="post" enctype="multipart/form-data">
+
+
+    {{form_end(form)}}
+
+              <div class="row form-group">
+              <div class="form-group text-right">
+
+                <button type="reset" class="templatemo-white-button">Annuler</button>
+                <button type="Submit" class="templatemo-white-button">Ajouter</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      {{form_end(form)}}
+
+
+</div>
+</div>
+</div>
+      {% endblock content %}

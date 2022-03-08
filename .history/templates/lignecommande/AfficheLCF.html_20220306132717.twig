@@ -1,0 +1,37 @@
+   
+   {% extends 'base.html.twig' %}
+{% block content %}
+    <div class="nk-gap-3"></div>
+   <div class="container">
+     <table class="nk-table" >
+                    <thead>
+                        <h2>Votre Liste Commande</h2>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-center" >id</th>
+                             <th class="text-center">Produit</th>
+                            <th class="text-center">quantité</th>
+                            <th class="text-center" >Prix</th>
+                            <th class="text-center">Statut</th>
+                             <th class="text-center">total</th>
+                        </tr>
+
+                      {% for lc in lignecommande %}
+                        <tr>
+                      <td>{{lc.id}} </td>
+                   <td>{{lc.Produit.nom}}</td>
+                     <td>{{lc.quantite}}</td>
+                    <td>{{lc.Produit.prix}}</td>
+                    <td>{{lc.lignecmd.Statut}} </td>
+                   
+                        </tr>     
+                          {% endfor %}                 
+                    </tbody>
+                </table>
+                <!-- END: Table -->
+
+</div>
+                <div class="nk-gap-3"></div>    
+
+                {% endblock content %}

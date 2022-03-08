@@ -1,0 +1,85 @@
+{% extends 'backend/dashboard_c/dashboard.html.twig' %}
+
+
+{% block title %}Add-Articles{% endblock %}
+
+
+
+{% block content %}
+
+    <body>
+    <!-- Left column -->
+    <div class="templatemo-flex-row">
+        <div class="templatemo-sidebar">
+            <div class="square"></div>
+            <h1>Visual Admin</h1>
+            <div class="profile-photo-container">
+                <img src="{{asset('images/profile-photo.jpg')}}" alt="Profile Photo" class="img-responsive">
+                <div class="profile-photo-overlay"></div>
+            </div>
+            <!-- Search box -->
+            <form class="templatemo-search-form" role="search">
+                <div class="input-group">
+                    <button type="submit" class="fa fa-search"></button>
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                </div>
+            </form>
+            <div class="mobile-menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="templatemo-left-nav">
+                <ul>
+                    <li><a href="{{ path('dashboard_c') }}"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+                    <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li>
+                    <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Data Visualization</a></li>
+                    <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li>
+                    <li><a href="{{ path('user_c') }}"><i class="fa fa-users fa-fw"></i>Users</a></li>
+                    <li><a href="{{ path('article_d') }}" class="active"><i class="fa fa-eject fa-fw"></i>Articles</a></li>
+                    <li><a href="{{ path('showgameplz') }}" ><i class="fa fa-eject fa-fw"></i>jeux</a></li>
+                    <li><a href="{{ path('login_c') }}"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main content -->
+        <div class="templatemo-content col-1 light-gray-bg">
+            <div class="templatemo-top-nav-container">
+                <div class="row">
+                    <nav class="templatemo-top-nav col-lg-12 col-md-12">
+                        <ul class="text-uppercase">
+                            <li><a href="">Admin panel</a></li>
+                            <li><a href="{{ path('dashboard_c') }}" class="active">Dashboard</a></li>
+                            <li><a href="">Overview</a></li>
+                            <li><a href="{{ path('login_c') }}">Sign in form</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="templatemo-content-widget white-bg">
+                <h2 class="margin-bottom-10">Ajouter un Article</h2>
+                <div class="templatemo-login-form">
+
+                    {{form_start(form)}}
+                    <div class="row form-group">
+
+                        {{form_widget(form)}}
+                        <div class="col-lg-6 col-md-6 form-group">
+
+                            {{form_end(form)}}
+
+                        </div>
+                    </div>
+                </div>
+                <footer class="text-right">
+                    <p>Copyright &copy; 2084 Company Name
+                        | Design: Template Mo</p>
+                </footer>
+            </div>
+            </form>
+        </div>
+    </div>
+    </body>
+
+
+{% endblock content %}
+
+

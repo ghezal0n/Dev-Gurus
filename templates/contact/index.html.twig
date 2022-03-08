@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+{% form_theme contactForm 'bootstrap_4_layout.html.twig' %}
+
+    <div class=container>
+    
+ <div class="col-md-6">
+                    <div class="nk-widget">
+                        <h4 class="nk-widget-title"><span class="text-main-1">Contact</span> With Us</h4>
+                        <div class="nk-widget-content">
+                            <form class="nk-form nk-form-ajax">
+                                <div class="row vertical-gap sm-gap">
+                                {{ form_start(contactForm) }}
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control required" name="email" placeholder="Email *" {{ form_widget(contactForm.email) }}
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control required" name="name" placeholder="Name *" {{ form_widget(contactForm.nom) }}
+                                    </div>
+                                </div>
+                                <div class="nk-gap"></div>
+                                <textarea class="form-control required" name="message" rows="5" placeholder="Message *"
+                                {{ form_widget(contactForm.message) }}
+                                </textarea>
+                                <div class="nk-gap-1"></div>
+                               
+                                <div class="nk-form-response-success"></div>
+                                <div class="nk-form-response-error"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+{{ form_end(contactForm) }}
+
+
+
+
+
+</div>
+                
+<script type=text/javascript>
+    $(function () {
+        $('#da_gallery .gallery-list ').hoverdir();
+    });
+</script>
+{% endblock %}

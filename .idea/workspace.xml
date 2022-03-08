@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="479df14a-553d-47a9-8209-6b0410b4dd06" name="Default Changelist" comment="test commit espace">
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302122212.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302201615.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302201618.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302201619.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302201916.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302201919.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202233.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202240.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202241.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202252.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202253.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202255.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202257.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202258.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202302.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202307.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202308.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202316.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202317.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202324.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202328.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202339.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202341.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202527.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202534.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202551.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202553.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202729.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202731.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202733.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202735.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202737.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202742.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202743.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202744.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202747.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202822.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202824.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202936.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202937.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302202951.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203011.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203141.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203159.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203500.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203502.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203504.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203512.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203514.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203517.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/ServiceGuideController_20220302203531.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/UserController_20220221212503.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/UserController_20220302203303.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/UserController_20220302203313.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/UserController_20220302203342.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.history/src/Controller/UserController_20220302203358.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReservationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ReservationType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ReservationTypeA.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/SearchFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/reservation/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/reservation/listReservation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CoachController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CoachController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ServiceGuideController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ServiceGuideController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/ServiceGuide.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ServiceGuide.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ServiceGuideRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ServiceGuideRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/service_guide/listService.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/service_guide/listService.html.twig" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="rawaa" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="25l0MYLmRZWUHiRlKnlkGR5YoRG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\USER\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="479df14a-553d-47a9-8209-6b0410b4dd06" name="Default Changelist" comment="" />
+      <created>1646086318056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646086318056</updated>
+      <workItem from="1646086319113" duration="365000" />
+      <workItem from="1646086718807" duration="333000" />
+      <workItem from="1646087541890" duration="3000" />
+      <workItem from="1646087567884" duration="753000" />
+      <workItem from="1646088334955" duration="1442000" />
+      <workItem from="1646089799641" duration="170000" />
+      <workItem from="1646171088593" duration="1351000" />
+      <workItem from="1646209710021" duration="1063000" />
+      <workItem from="1646210799140" duration="24000" />
+      <workItem from="1646210839266" duration="73000" />
+      <workItem from="1646210945268" duration="1077000" />
+      <workItem from="1646212055755" duration="65000" />
+      <workItem from="1646212134642" duration="5717000" />
+      <workItem from="1646249831172" duration="462000" />
+    </task>
+    <task id="LOCAL-00001" summary="test commit espace">
+      <created>1646088472847</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646088472847</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test commit espace">
+      <created>1646088699406</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646088699406</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test commit espace">
+      <created>1646089841980</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646089841980</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="test commit espace" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit espace" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="578" y="312" key="#Composer" timestamp="1646086469327">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="578" y="312" key="#Composer/0.0.1536.864@0.0.1536.864" timestamp="1646086469327" />
+    <state x="436" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1646211688567">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="436" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1646211688567" />
+    <state x="549" y="174" key="FileChooserDialogImpl" timestamp="1646089632298">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="174" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1646089632298" />
+    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1646086943667">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1646086943667" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1646212258767">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1646212258767" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1646089849566">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1646089849566" />
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1646211406493">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1646211406493" />
+    <state x="542" y="289" width="451" height="369" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1646088115906">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="542" y="289" width="451" height="369" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.864@0.0.1536.864" timestamp="1646088115906" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1646211491275">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1646211491275" />
+    <state x="599" y="223" key="svn.repositoryBrowser" timestamp="1646087981260">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="599" y="223" key="svn.repositoryBrowser/0.0.1536.864@0.0.1536.864" timestamp="1646087981260" />
+    <state x="588" y="206" key="svn4idea.import.options" timestamp="1646087976474">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="588" y="206" key="svn4idea.import.options/0.0.1536.864@0.0.1536.864" timestamp="1646087976474" />
+  </component>
+</project>
